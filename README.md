@@ -1,0 +1,2 @@
+# dinosgame
+platformer by pygame
