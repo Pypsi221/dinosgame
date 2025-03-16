@@ -49,4 +49,10 @@ door_image = pygame.image.load('assets/images/door/door.jpg')
 """"ШРИФИММ"""
 pygame.font.init()
 font1 = pygame.font.Font(None,60)
+font2 = pygame.font.Font(None,50)
+
+
+find_key_txt = font2.render("Треба ключ ",True,(47, 79, 79))
+open_basket_txt = font2.render("Натисни E щоб відкрити",True,(47, 79, 79))
+get_key_txt = font2.render("Натиснути E щоб підібрати  ",True,(47, 79, 79))
 

@@ -3,24 +3,26 @@ from settings import*
 
 # Карта рівня
 level1 = [
-"                                                                    ",
-    "                                                   p            ",
-    "          o                o                   -------          ",
-    "       ---------          --         --                         ",
-    "                                 -- b               o    o       ",
-    "       o                           ---           ------         ",
-    "    -----                  o                                    ",
-    "                       -------               --          -----  ",
-    "        o                                                       ",
-    "        o                                             o         ",
-    "      --     ---           ---            ---      ----         ",
-    "                                                                ",
-    "                  o   --             o                  ------- ",
-    "    o           -----              -------    o                     ",
-    "--------      -           -----           -----     --    ------",
-    "                                                                ",
-    "     o                o             o       ------        1     ",
-    " ----------         ----        ----                  ------    ",
+    "                              ------                 ------             ",
+    "      o                                                                 ",
+    "   --------         ------                   ----                       ",
+    "                                                               --       ",
+    "          o                o                   -------                  ",
+    "       ---------          --         --                         --      ",
+    "                    b             --                o    o              ",
+    "       o          ----                 ---           ------             ",
+    "    -----     -             o                                           ",
+    "                       -------               --          -----          ",
+    "        o      ---                       ---                     --     ",
+    "        o                         -                    o                ",
+    "      --     ---           ---            ---      ----                 ",
+    "                                                                 --     ",
+    "                  o   --             o                  -------         ",
+    "    o           -----              -------    o                         ",
+    "--------      -           -----           -----     --    ------        ",
+    "                                                                        ",
+    "     o                o             o       ------        1             ",
+    " ----------         ----        ----                  ------            ",
 ]
 
 level1_width =  len(level1[0])*100
@@ -75,14 +77,12 @@ def draw_level(level:list):
                 coin = MapObject(x,y,50,50, coin_image)
                 level_objects.add(coin)
                 coins.add(coin)
-            if symbol == "p":
-                portal = MapObject(x,y,50,50, portal_image)
-                level_objects.add(portal)
+            
             x += 100
         x = 0
         y += 50
 
-    return level_objects,key,basket,portal
+    return level_objects,key,basket
 
 
 
